@@ -12,9 +12,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalizes.css" />
-    <link rel="stylesheet" href="css/Plugins/fakeloader.css" />
     <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/Plugins/fakeloader.css" />
+    <link rel="stylesheet" href="css/Plugins/slidescroll.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
     <!-- Page Loader -->
@@ -25,9 +26,45 @@
         </div>
       </div>
     </div>
+    <!-- Page Slider  -->
+    <div class="slidescroll-wrap">
+      <!-- this element is required -->
+      <div class="main">
+        <!-- this element will be animated -->
+        <div class="page" id="start" data-slidescroll-title-selector="h1">
+          <h1>First Page</h1>
+          <p>Your Content</p>
+        </div>
+        <div class="page" id="second" data-slidescroll-title-selector="h2">
+          <!-- these elements hold each content page -->
+          <h2>Second Page</h2>
+          <p>Your Content</p>
+        </div>
+        <div id="third" class="page" data-slidescroll-title-selector="h2">
+          <h2>Third page</h2>
+          <p>Your Content</p>
+        </div>
+        <div id="fourth" class="page" data-slidescroll-title-selector="h2">
+          <h2>Fourth page</h2>
+          <p>Your Content</p>
+        </div>
+        <div id="fifth" class="page" data-slidescroll-title-selector="h2">
+          <h2>Fifth page</h2>
+          <p>Your Content</p>
+        </div>
+        <div id="six" class="page" data-slidescroll-title-selector="h2">
+          <h2>Six page</h2>
+          <p>Your Content</p>
+        </div>
+      </div>
+    </div>
+
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script src="JS/Plugins/modernizr.custom.92573.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="JS/Plugins/jquery.mousewheel.js"></script>
+    <script src="JS/Plugins/jquery.slidescroll.js"></script>
     <script src="js/Plugins/fakeloader.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
