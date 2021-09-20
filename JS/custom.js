@@ -4,7 +4,7 @@ $(function () {
   window.FakeLoader.init({});
   // Trigger Search Page
   var popup = $(".header .container li.search .popup-search");
-  var openSearch = $(".header .container li.search");
+  var openSearch = $(".header .container li.search i");
   var closeSearch = $(".header .closing");
   openSearch.click(function () {
     setTimeout(function () {
@@ -25,12 +25,12 @@ $(function () {
     setTimeout(function () {
       popup.addClass("visibility");
       closeSearch.addClass("visibility");
-    }, 300);
+    }, 250);
     popup.find(".content").animate(
       {
         marginBottom: "-=50",
       },
-      600
+      300
     );
   });
   // Moving Elements on loading page
@@ -38,20 +38,24 @@ $(function () {
     $(".landing-video h3 ").animate(
       {
         fontSize: 18,
-        marginTop: 0,
+        top: "520px",
       },
-      600
+      800
     );
-  }, 600);
+  }, 450);
   setTimeout(function () {
     $(".landing-video h1 ").fadeIn();
-  }, 600);
+  }, 800);
   setTimeout(function () {
-    $(".landing-video a ").fadeIn("slow").animate(
+    $(".landing-video a ").fadeIn().animate(
       {
-        marginTop: 0,
+        top: "350px",
+        left: "700px",
+        fontSize: "12px",
+        borderWidth: "2px",
       },
-      600
+      800,
+      "easeInOutBounce"
     );
-  }, 600);
+  }, 1400);
 });
