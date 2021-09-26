@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Global Talent House</title>
+    <title>Global Talent House Home Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,11 +13,16 @@
     />
     <link rel="stylesheet" href="css/normalizes.css" />
     <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/Plugins/scroller.css" />
+    <link rel="stylesheet" href="css/Plugins/jquery.fsscroll.css" />
+    <link rel="stylesheet" href="css/Plugins/simple-calendar.css" />
+    <link rel="stylesheet" href="css/Plugins/slider-pro.min.css" />
+    <link rel="stylesheet" href="css/Plugins/slick.css" />
+    <link rel="stylesheet" href="css/Plugins/slick-theme.css" />
     <link rel="stylesheet" href="css/Plugins/fakeloader.css" />
-    <link rel="stylesheet" href="css/Plugins/slidescroll.css" />
     <link rel="stylesheet" href="css/home.css" />
   </head>
-  <body>
+  <body data-scroller="true">
     <!-- Page Loader -->
     <div id="fakeloader-overlay" class="visible incoming">
       <div class="loader-wrapper-outer">
@@ -26,47 +31,392 @@
         </div>
       </div>
     </div>
-    <!-- Page Slider  -->
-    <div class="slidescroll-wrap">
-      <!-- this element is required -->
-      <div class="main">
-        <!-- this element will be animated -->
-        <div class="page" id="start" data-slidescroll-title-selector="h1">
-          <h1>First Page</h1>
-          <p>Your Content</p>
+    <!-- page Header -->
+    <div class="header">
+      <div class="header-content">
+        <a href="welcome.html" class="logo">
+          <img src="Imgs/gth-logo-white.png" alt="White-Logo" />
+        </a>
+        <ul class="menu">
+          <li><a href="home.html">home</a></li>
+          <li><a href="#">about us</a></li>
+          <li class="artists">
+            <a href="#">artists<span>&#9495;</span></a>
+            <ul>
+              <li>artist directory</li>
+              <li>training institutes</li>
+            </ul>
+          </li>
+          <li class="events">
+            <a href="#">events<span>&#9495;</span></a>
+            <ul>
+              <li>competition & Auditions</li>
+              <li>events calender</li>
+              <li>past events gallery</li>
+            </ul>
+          </li>
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">sign in</a></li>
+          <li class="join"><a href="#">join GTH</a></li>
+          <li class="search">
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+            <div class="popup-search visibility">
+              <div class="content">
+                <input type="text" placeholder="Search..." />
+                <i class="fas fa-search fa-3x"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <i class="visibility closing fas fa-times"></i>
+    </div>
+    <!-- .................................................................................. -->
+    <div class="container" data-fs-scroll>
+      <div class="sections">
+        <div class="section section0">
+          <div class="slider-background">
+            <div id="demo" class="slider-pro top">
+              <div class="sp-slides">
+                <div class="sp-slide flex">
+                  <img src="imgs/competitions/01.jpg" />
+                  <div class="txt">
+                    <h3>classical Voice of India</h3>
+                    <p>
+                      Presented by Sangeet Milan <br />
+                      Grand Finals—14-15 December, 2016 <br />
+                      Venue: Sant Gadge Auditorium, Gomtinagar, Lucknow
+                    </p>
+                    <div class="link">
+                      <a href="http://sangeetmilon.org/">Register Online</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="sp-slide flex two">
+                  <div class="txt">
+                    <h3>Auditions for singers</h3>
+                    <p>
+                      Cras dapibus Vivamus elementum semper nisi Aenean
+                      vulputate eleifend tellus Aenean leo ligula, porttitor eu
+                      consequat vitae Phasellus viverra nulla ut metus varius
+                      laoreet.<br />
+                      porttitor eu consequat vitae Phasellus viverra nulla.
+                    </p>
+                    <div class="link">
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                  <img src="imgs/competitions/02.jpg" />
+                </div>
+                <div class="sp-slide flex">
+                  <img src="imgs/competitions/03.jpg" />
+                  <div class="txt">
+                    <h3>college dance competitions</h3>
+                    <p>
+                      Cras dapibus Vivamus elementum semper nisi Aenean
+                      vulputate eleifend tellus Aenean leo ligula, porttitor eu
+                      consequat vitae Phasellus viverra nulla ut metus varius
+                      laoreet. <br />
+                      porttitor eu consequat vitae Phasellus viverra nulla ut
+                      metus varius laoreet
+                    </p>
+                    <div class="link">
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="page" id="second" data-slidescroll-title-selector="h2">
-          <!-- these elements hold each content page -->
-          <h2>Second Page</h2>
-          <p>Your Content</p>
+        <div class="section section1">
+          <div class="explore">
+            <div class="txt">
+              <h1>EXPLORE GLOBAL TALENT HOUSE</h1>
+              <div class="link-p">
+                <p>
+                  With the Indian advertising entertainment, event & Fashion
+                  industry changing and running full stem and opening its doors
+                  to global markets & talents, the need to gear up to face stiff
+                  competition has never been more felt than now, more so for the
+                  creative community which include Graphic designer, Dancers,
+                  Singers, Photographers, etc..
+                  <br />
+                  <br />
+                  Being In a Vibrant Advertising, Films (Bollywood), T.V,
+                  Entertainment and fashion capital city of Mumbai, Global
+                  Talent house is the first place you look for your promotional
+                  needs and we are confident it will be the last to end your
+                  search.
+                </p>
+                <div class="link">
+                  <a href="#">I WANT TO KNOW IT ALL</a>
+                </div>
+              </div>
+            </div>
+            <div class="img">
+              <img src="imgs/wheel.png" alt="Wheel" />
+            </div>
+          </div>
         </div>
-        <div id="third" class="page" data-slidescroll-title-selector="h2">
-          <h2>Third page</h2>
-          <p>Your Content</p>
+        <div class="section section2">
+          <div class="sec-three">
+            <div id="container">
+              <h2>EVENTS THIS MONTH</h2>
+            </div>
+            <div class="img-gallery">
+              <h2>ALSO CHECK OUT...</h2>
+              <div class="imgs">
+                <img src="imgs/Imgs-Gallery/01.jpg" alt="" />
+                <img src="imgs/Imgs-Gallery/02.jpg" alt="" />
+                <img src="imgs/Imgs-Gallery/03.jpg" alt="" />
+                <img src="imgs/Imgs-Gallery/04.jpg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="fourth" class="page" data-slidescroll-title-selector="h2">
-          <h2>Fourth page</h2>
-          <p>Your Content</p>
+        <div class="section section3">
+          <div class="sec-four">
+            <div class="content">
+              <h2>WHAT WOULD YOU LIKE TO DO</h2>
+              <div class="options">
+                <a href="#" class="option">
+                  <ion-icon name="eye"></ion-icon>
+                  <h5>Browse Artist Directory</h5>
+                </a>
+                <a href="#" class="option">
+                  <ion-icon name="newspaper"></ion-icon>
+                  <h5>Post Requirement to Hire an Artist</h5>
+                </a>
+                <a href="#" class="option">
+                  <ion-icon name="megaphone"></ion-icon>
+                  <h5>Show and Promote Wour Work as an Artist</h5>
+                </a>
+                <a href="#" class="option">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <h5>Check Events Calendar</h5>
+                </a>
+                <a href="#" class="option">
+                  <ion-icon name="people"></ion-icon>
+                  <h5>See Upcoming Competitions</h5>
+                </a>
+                <a href="#" class="option">
+                  <ion-icon name="mail"></ion-icon>
+                  <h5>Contact Us for Best Corporate Deals</h5>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="fifth" class="page" data-slidescroll-title-selector="h2">
-          <h2>Fifth page</h2>
-          <p>Your Content</p>
+        <div class="section section4">
+          <div class="sec-five">
+            <div class="artists">
+              <div class="txt">
+                <h2>FEATURED ARTISTS</h2>
+                <a href="#">View All</a>
+              </div>
+              <div id="demo" class="slider-pro down">
+                <div class="sp-slides">
+                  <div class="sp-slide">
+                    <div class="col">
+                      <div class="img">
+                        <img src="imgs/artist/01.jpg" />
+                        <div class="hover">
+                          <p>
+                            Our ante tincidunt tempus, Donec vitae sapien ut
+                            libero venenatis faucibus. Nullam quis ante.
+                          </p>
+                          <a href="#">Full Profile</a>
+                        </div>
+                      </div>
+                      <div class="txt">
+                        <h3>Artist Name</h3>
+                        <p>Category</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="img">
+                        <img src="imgs/artist/02.jpg" />
+                        <div class="hover">
+                          <p>
+                            Our ante tincidunt tempus, Donec vitae sapien ut
+                            libero venenatis faucibus. Nullam quis ante.
+                          </p>
+                          <a href="#">Full Profile</a>
+                        </div>
+                      </div>
+                      <div class="txt">
+                        <h3>Artist Name</h3>
+                        <p>Category</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="img">
+                        <img src="imgs/artist/04.jpg" />
+                        <div class="hover">
+                          <p>
+                            Our ante tincidunt tempus, Donec vitae sapien ut
+                            libero venenatis faucibus. Nullam quis ante.
+                          </p>
+                          <a href="#">Full Profile</a>
+                        </div>
+                      </div>
+                      <div class="txt">
+                        <h3>Artist Name</h3>
+                        <p>Category</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sp-slide">
+                    <div class="col">
+                      <div class="img">
+                        <img src="imgs/artist/05.jpg" />
+                        <div class="hover">
+                          <p>
+                            Our ante tincidunt tempus, Donec vitae sapien ut
+                            libero venenatis faucibus. Nullam quis ante.
+                          </p>
+                          <a href="#">Full Profile</a>
+                        </div>
+                      </div>
+                      <div class="txt">
+                        <h3>Artist Name</h3>
+                        <p>Category</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="img">
+                        <img src="imgs/artist/06.jpg" />
+                        <div class="hover">
+                          <p>
+                            Our ante tincidunt tempus, Donec vitae sapien ut
+                            libero venenatis faucibus. Nullam quis ante.
+                          </p>
+                          <a href="#">Full Profile</a>
+                        </div>
+                      </div>
+                      <div class="txt">
+                        <h3>Artist Name</h3>
+                        <p>Category</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="img">
+                        <img src="imgs/artist/07.jpg" />
+                        <div class="hover">
+                          <p>
+                            Our ante tincidunt tempus, Donec vitae sapien ut
+                            libero venenatis faucibus. Nullam quis ante.
+                          </p>
+                          <a href="#">Full Profile</a>
+                        </div>
+                      </div>
+                      <div class="txt">
+                        <h3>Artist Name</h3>
+                        <p>Category</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="institutes">
+              <h2>TRAINING INSTITUTES</h2>
+              <div class="institute">
+                <a href="#">Institute Name</a>
+                <p>Pune, India for singers,musicians</p>
+              </div>
+              <div class="institute">
+                <a href="#">Institute Name</a>
+                <p>Pune, India for singers,musicians</p>
+              </div>
+              <div class="institute">
+                <a href="#">Institute Name</a>
+                <p>Pune, India for singers,musicians</p>
+              </div>
+              <div class="institute">
+                <a href="#">Institute Name</a>
+                <p>Pune, India for singers,musicians</p>
+              </div>
+              <a href="#">View All</a>
+            </div>
+          </div>
         </div>
-        <div id="six" class="page" data-slidescroll-title-selector="h2">
-          <h2>Six page</h2>
-          <p>Your Content</p>
+        <div class="section section5">
+          <div class="sec-six">
+            <div class="logos">
+              <h2>VALUED SPONSORS</h2>
+              <div class="slider demo">
+                <div><img src="imgs/logos/01.png" alt="" /></div>
+                <div><img src="imgs/logos/02.png" alt="" /></div>
+                <div><img src="imgs/logos/03.png" alt="" /></div>
+                <div><img src="imgs/logos/04.png" alt="" /></div>
+                <div><img src="imgs/logos/05.png" alt="" /></div>
+                <div><img src="imgs/logos/06.png" alt="" /></div>
+                <div><img src="imgs/logos/08.png" alt="" /></div>
+                ...
+              </div>
+            </div>
+            <div class="contact">
+              <div class="col-1">
+                <p>
+                  Our ante tincidunt tempus, Donec vitae sapien ut libero
+                  venenatis faucibus.<br />
+                  Nullam quis ante. Etiam sit amet orci eget eros.
+                </p>
+                <a href="#">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <p>yourname@domain.com</p>
+                </a>
+                <a href="#">
+                  <ion-icon name="call"></ion-icon>
+                  <p>+40 (0) 012 345 6789</p>
+                </a>
+                <h5>
+                  © 2016 <a href="#">Global Talent House</a>. All Rights
+                  Reserved.
+                </h5>
+              </div>
+              <div class="col-2">
+                <div>
+                  <ul class="faq">
+                    <li>PRIVACY POLICY</li>
+                    <li>TERMS</li>
+                    <li>FAQ</li>
+                    <li>CONTACT</li>
+                  </ul>
+                  <ul class="social">
+                    <li><ion-icon name="logo-twitter"></ion-icon></li>
+                    <li><ion-icon name="logo-youtube"></ion-icon></li>
+                    <li><ion-icon name="logo-linkedin"></ion-icon></li>
+                  </ul>
+                </div>
+                <h5>Website by <a href="#">Vrinda Maru Kansal</a></h5>
+              </div>
+            </div>
+          </div>
         </div>
+        ...
       </div>
     </div>
-
+    <!-- .................................................................................................... -->
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="JS/Plugins/modernizr.custom.92573.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="JS/Plugins/jquery.mousewheel.js"></script>
-    <script src="JS/Plugins/jquery.slidescroll.js"></script>
+    <script src="js/Plugins/scroller.min.js" async="async"></script>
+    <script src="js/Plugins/jquery.fsscroll.js"></script>
+    <script src="js/Plugins/jquery.simple-calendar.js"></script>
+    <script src="js/Plugins/jquery.sliderPro.min.js"></script>
+    <script src="js/Plugins/slick.min.js"></script>
     <script src="js/Plugins/fakeloader.js"></script>
     <script src="js/home.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
-
-

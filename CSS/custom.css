@@ -61,7 +61,19 @@ ul {
   transition: 0.3s;
   letter-spacing: 1px;
 }
-.header .container ul li:not(.join):hover {
+.header .container ul li a {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.8;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+.header .container ul li a:not(.join):hover {
   color: var(--menu-color);
 }
 .header .container ul li.join {
@@ -69,6 +81,9 @@ ul {
 }
 .header .container ul li.join:hover {
   background-color: #323232b0;
+}
+.header .container ul li.join:hover a {
+  color: var(--menu-color);
 }
 .header .container li.artists,
 .header .container li.events {

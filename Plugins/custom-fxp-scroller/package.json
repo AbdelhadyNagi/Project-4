@@ -1,0 +1,46 @@
+{
+  "name": "@fxp/jquery-scroller",
+  "version": "1.0.1",
+  "license": "MIT",
+  "author": "François Pluchino <francois.pluchino@gmail.com>",
+  "contributors": [],
+  "description": "A custom scrollbar for desktop browser",
+  "keywords": [
+    "scroller",
+    "scroll",
+    "bar",
+    "desktop",
+    "jquery"
+  ],
+  "homepage": "https://github.com/fxpio/fxp-jquery-scroller",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fxpio/fxp-jquery-scroller.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fxpio/fxp-jquery-scroller/issues"
+  },
+  "scripts": {
+    "dev": "encore dev",
+    "serve": "encore dev-server --port 9000",
+    "build:style": "lessc less/scroller.less dist/scroller.css",
+    "build:module": "rollup -c",
+    "build": "yarn run build:module && yarn run build:style"
+  },
+  "engines": {},
+  "main": "js/scroller.js",
+  "dependencies": {
+    "@fxp/jquery-pluginify": "github:fxpio/fxp-jquery-pluginify#semver:^1.0.0",
+    "jquery": "^2.2.0||^3.2.0"
+  },
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.23.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-uglify": "^6.0.2"
+  }
+}
