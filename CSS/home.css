@@ -1,7 +1,5 @@
 /* Start Global */
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 html,
@@ -283,6 +281,8 @@ ul {
   transition: all 0.3s;
   margin: 20px 10px;
   border-radius: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 #demo .sp-slide.flex .txt .link a {
@@ -344,6 +344,8 @@ ul {
 .explore .txt .link-p .link {
   background-color: #fff;
   border-radius: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin-top: 10px;
   margin-left: 22px;
@@ -531,6 +533,8 @@ ul {
   font-weight: bold;
   font-size: 11px;
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 8px 16px;
   border: 2px solid #fff;
@@ -598,6 +602,8 @@ ul {
   transition: 0.3s;
   padding-bottom: 5px;
   margin-top: -10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .sec-five .institutes > a:hover {
@@ -687,6 +693,8 @@ ul {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-weight: bold;
   font-size: 13px;
